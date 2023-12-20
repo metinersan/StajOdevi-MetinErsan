@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="yeni.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="buttonWrapper">
+	      <button class="tab-button active" data-id="Intune Key Capabilities">Intune Key Capabilities</button>
+	      <button class="tab-button" data-id="Intune Endpoint Protection">Intune Endpoint Protection</button>
+	      <button class="tab-button" data-id="Intune Workplace Management">Intune Workplace Management</button>
+    	</div>
+	    <div class="contentWrapper">
+	    	<div class="content active" id="Intune Key Capabilities">
+	    		<div class="table">
+	    			<div class="baslik">
+	    				<h2>Intune Key Capabilities</h2>
+	    			</div>
+	    			<div class="kapsayici">
+		    				<div class="table2" id="tbl1">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img style="width: 90px;" src="1.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Device Management Across Platforms</h3>
+									<p>Intune securely manages device enrollment across Android, iOS/iPad, macOS, and Windows, orchestrating registration, certificate installation, and access to internal resources.</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2" id="tbl2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img  style="width: 90px;" src="2.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Application Management</h3>
+									<p>Intune enables access to corporate applications from any device, streamlining management and optimizing the digital workspace.</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2" id="tbl3">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img  style="width: 90px;" src="3.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Security and Compliance</h3>
+									<p>Microsoft Intune integrates with GDPR, HIPAA, and industry standards, providing data security features like loss prevention, encryption, and compliance monitoring.</p>
+								</div>
+		    				</div>
+		    			</div>
+	    		</div>
+	    	</div>	
+	    </div>
+	    <div class="content" id="Intune Endpoint Protection">
+	    		<div class="table">
+	    			<div class="baslik">
+	    				<h2>Intune Endpoint Protection</h2>
+	    			</div>
+	    			<div class="kapsayici">
+		    				<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img  style="width: 90px;" src="6.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Integration with Microsoft Defender Antivirus</h3>
+									<p>Intune collaborates with Microsoft Defender for Endpoint, broadening its scope to offer comprehensive security solutions.</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img  style="width: 90px;" src="5.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Threat Detection and Response</h3>
+									<p>Intune employs threat intelligence and machine learning algorithms to identify and mitigate potential risks.</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img  style="width: 90px;" src="4.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Collaboration and Productivity</h3>
+									<p>Intune leverages Azure Active Directory for integration with various Microsoft 365 services. This integration enables automatic policy deployment based on user roles and groups.</p>
+								</div>
+		    				</div>
+		    			</div>
+	    		</div>
+	    	</div>	
+	    </div>
+	    <div class="content" id="Intune Workplace Management">
+	    		<div class="table">
+	    			<div class="baslik">
+	    				<h2>Intune Workplace Management</h2>
+	    			</div>
+	    			<div class="kapsayici">
+		    				<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img src="ornek.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Supporting Remote Work</h3>
+									<p>Intune tackles this challenge by offering flexible device policies and an intuitive role-based access control (RBAC) model, enabling businesses to manage access privileges.</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img src="ornek2.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Corporate-Owned and BYOD Management</h3>
+									<p>Intune's MDM and MAM capabilities guarantee regulatory compliance and smooth device functionality, enhancing user experiences while safeguarding organizational assets</p>
+								</div>
+		    				</div>
+		    			</div>
+		    			<div class="table2">
+			    				<div class="icerik">
+			    					<div class="gorsel">
+			    						<img src="ornek3.png">
+			    					</div>
+			    				<div class="yazilar">
+									<h3>Self-Service Portals</h3>
+									<p>Self-service portals have become indispensable tools, and Intune's cutting-edge offering, Microsoft Entra ID, is leading the way in revolutionizing user interaction</p>
+								</div>
+		    				</div>
+		    			</div>
+	    		</div>
+	    	</div>	
+	    </div>
+	</div>
+</div>
+  <script>
+		const tabs = document.querySelector(".wrapper");
+		const tabButton = document.querySelectorAll(".tab-button");
+		const contents = document.querySelectorAll(".content");
+
+		tabs.onclick = (a) => {
+		  const id = a.target.dataset.id;
+		  if (id) {
+		    tabButton.forEach((btn) => {
+		      btn.classList.remove("active");
+		    });
+		    a.target.classList.add("active");
+
+		    contents.forEach((content) => {
+		      content.classList.remove("active");
+		    });
+		    const element = document.getElementById(id);
+		    element.classList.add("active");
+		  }
+		};
+
+	</script>
+</body>
+</html>
